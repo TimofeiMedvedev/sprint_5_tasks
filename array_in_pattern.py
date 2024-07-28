@@ -1,4 +1,4 @@
-def array_in_pattern(array, pattern):   
+def array_in_pattern(array, pattern):  
     # pattern = [3, 10, 5, 9, 2, 7, 6, 0]
     # len_pattern = 8
     # array = [3, 10, 5, 9, 2, 7, 6, 0, 8, 3, 4]
@@ -17,6 +17,7 @@ def array_in_pattern(array, pattern):
     all_list = sorted_list + sorted(new_list_1)
     return all_list
 
+
 def main():
     with open("input.txt", "r") as file_in:
         line = file_in.readlines()
@@ -25,6 +26,8 @@ def main():
     result = array_in_pattern(array, pattern)
     with open("output.txt", "w") as file_out:
         file_out.write(' '.join(str(x) for x in result))
+
+        
 if __name__ == '__main__':
     main()
   
